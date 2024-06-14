@@ -6,7 +6,7 @@ public class two_sum {
         int target = 6;
 
         for (int i = 0; i < nums.length; i++) {
-            for (int n = 0; n < nums.length; n++){
+            for (int n = i + 1; n < nums.length; n++){
                 int check = nums[i] + nums[n];
                 if (check == target){
                     System.out.printf("Output: [%d, %d]", nums[i], nums[n]);
